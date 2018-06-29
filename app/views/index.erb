@@ -1,1 +1,40 @@
-<h1> This is a view </h1>
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Matt's Project 5 for Upperline</title>
+        <style media="screen">
+            p {
+                color: white;
+            }
+            head {
+                padding: 20px;
+            }
+            body {
+                padding: 20px;
+            }
+        </style>
+        
+        <nav>
+            <div class="nav-wrapper #304ffe indigo accent-4">
+              <a href="/" class="brand-logo">Jeoptrivia!</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/play">Play now</a></li>
+                <li><a href="https://rubygems.org/gems/httparty/versions/0.13.7">HTTParty</a></li>
+              </ul>
+            </div>
+        </nav>
+    </head>
+    
+    <body>
+        <h1> Welcome to Jeop-trivia!</h1>
+        <form method="post" action="/results">
+            <label for="player1">Player 1 Name: <input type="text" name="player1"/></label>
+            <label for="player2">Player 2 Name: <input type="text" name="player2"/></label>
+            <label for="player3">Player 3 Name: <input type="text" name="player3"/></label>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
